@@ -11,7 +11,23 @@ a:hover{
     color: var(--blue);
     transition: all 0.3s ease-in-out;
 }
-
+.ptitre{
+    font-family: Montserrat;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0;
+    color: var(--blue);
+}
+.gtitre{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 30px;
+    line-height: 34.5px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
 /* Header */
 
 header{
@@ -90,8 +106,73 @@ header ul a{
             &:hover{
                 color: #fff;
                 background-color: var(--blue);
+                transform: scale(1.1);
                 transition: all 0.3s ease-in-out;
             }
+        }
+    /* Section 2 */
+        #presentation{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1440px;
+            margin: 60px auto;
+            gap: 70px;
+        }
+        #presentation div{
+            gap: 20px;
+            display: flex;
+        }
+        #presentation span{
+            width: 40px;
+            border: none;
+            border-top: solid 2px var(--blue);
+            overflow: visible;
+            position: relative;
+            top: 11px;
+        }
+        #presentation p{
+            max-width: 496px;
+            line-height: 32px;
+            margin-bottom: 16px;
+        }
+        #presentation article{
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        #presentation img{
+            object-fit: cover;
+            width: 720px;
+            height: 656px;
+        }
+        #presentation a{
+            text-decoration: none;
+            width: fit-content;
+            line-height: 18.5px;
+            margin-bottom: 40px;
+            position: relative;
+            left: 60px;
+            border: solid 1px var(--blue);
+            color: #fff;
+            background-color: var(--blue);
+            padding: 12px 24px;
+        }
+        #info{
+            max-width: 1440px;
+            margin: auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            margin-bottom: 60px;
+        }
+        #info article{
+            display: grid;
+            justify-items: center;
+            
+        }
+        #info i{
+            font-size: 50px;
+            color: var(--blue);
         }
 
 

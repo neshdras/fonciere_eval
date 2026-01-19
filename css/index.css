@@ -236,6 +236,77 @@ header ul a{
             }
         }
 
+    /* Section 4 */
+        .s4{
+            display: grid;
+            justify-items: center;
+            margin: 70px 0;
+        }
+        .s4 div{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 100px;
+            padding-bottom: 50px;
+        }
+        .s4 div article{
+            max-width: 408px;
+        }
+        .s4 img{
+            max-width: 390px;
+            max-height: 290px;
+            object-fit: cover;
+        }
+        .s4 div a{
+            display: grid;
+            gap: 20px;
+            justify-items: center;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: #000;
+        }
+        .s4>.btnblue{
+            position: static;
+        }
+    /* Section 5 */
+        .s5{
+            background-color: #859399;
+            padding: 50px 0;
+        }
+        .s5 div{
+            max-width: 700px;
+            margin: auto;
+        }
+        .s5 h2, .s5 h3{
+            color: #fff;
+        }
+        .s5 form{
+            max-width: 680px;
+            display: grid;
+            gap: 16px;
+        }
+        .s5 article{
+            max-width: 700px;
+            display: flex;
+            gap: 40px;
+        }
+        .s5 input, .s5 textarea{
+            width: -webkit-fill-available;
+            resize: none;
+            padding: 10px;
+        }
+        #check{
+            display: block;
+            color: #fff;
+        }
+        #checkbox{
+            width: fit-content;
+        }
+        #subtn{
+            width: fit-content;
+            color: var(--blue);
+            padding: 10px 28px;
+        }
+
 
 /* Footer */
 footer{

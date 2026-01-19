@@ -28,6 +28,24 @@ a:hover{
     text-transform: uppercase;
     padding-bottom: 50px;
 }
+.btnblue{
+         text-decoration: none;
+            width: fit-content;
+            line-height: 18.5px;
+            margin-bottom: 40px;
+            position: relative;
+            left: 60px;
+            border: solid 1px var(--blue);
+            color: #fff;
+            background-color: var(--blue);
+            padding: 12px 24px;
+            &:hover{
+                color: var(--blue);
+                background-color: #fff;
+                transition: all 0.3s ease-in-out;
+                transform: scale(1.1);
+            }
+}
 /* Header */
 
 header{
@@ -145,18 +163,6 @@ header ul a{
             width: 720px;
             height: 656px;
         }
-        #presentation a{
-            text-decoration: none;
-            width: fit-content;
-            line-height: 18.5px;
-            margin-bottom: 40px;
-            position: relative;
-            left: 60px;
-            border: solid 1px var(--blue);
-            color: #fff;
-            background-color: var(--blue);
-            padding: 12px 24px;
-        }
         #info{
             max-width: 1440px;
             margin: auto;
@@ -173,6 +179,61 @@ header ul a{
         #info i{
             font-size: 50px;
             color: var(--blue);
+        }
+
+    /* Section 3 */
+        .s3{
+            background-color: var(--blue);
+            padding: 106px 0;
+        }
+        .s3 div{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            max-width: 1440px;
+            margin: auto;
+            gap: 80px;
+        }
+        .s3 h2{
+            color: #fff;
+        }
+        .s3 h3{
+            color: #fff;
+            max-width: 620px;
+        }
+        .s3 p{
+            color: #fff;
+            max-width: 500px;
+            line-height: 32px;
+            padding-bottom: 16px;
+        }
+        .s3 a{
+            color: var(--blue);
+            text-decoration: none;
+            background-color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 20px;
+            line-height: 18.4px;
+            &:hover{
+                color: #fff;
+                background-color: var(--blue);
+                transform: scale(1.1);
+                transition: all 0.3s ease-in-out;
+            }
+        }
+        #gallery{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px 20px;
+        }
+        #gallery img{
+            object-fit: cover;
+            width: 340px;
+            height: 226px;
+            &:last-child{
+                width: 700px;
+                grid-column: 1/3;
+            }
         }
 
 

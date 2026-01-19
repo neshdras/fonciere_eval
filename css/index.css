@@ -3,13 +3,18 @@
 *{
     margin: 0;
     font-family: Open Sans;
+    scroll-behavior: smooth;
 }
 :root{
     --blue: #27697C;
 }
-a:hover{
-    color: var(--blue);
-    transition: all 0.3s ease-in-out;
+#upscroll{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    font-size: 22px;
+    padding-bottom: 6px;
 }
 .ptitre{
     font-family: Montserrat;
@@ -54,7 +59,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px 0;
 }
 header img{
@@ -64,7 +69,7 @@ header ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none;
-    gap: 100px;
+    /* gap: 100px; */
     padding: 0;
 }
 header ul a{
@@ -74,6 +79,13 @@ header ul a{
     line-height: 20px;
     letter-spacing: 0%;
     font-weight: 400;
+    border: solid 1px #fff;
+    padding: 52px;
+    &:hover{
+        color: #fff;
+        background-color: var(--blue);
+        border-color: var(--blue);
+    }
 }
 #menu{
     display: none;
@@ -183,6 +195,7 @@ header ul a{
         #info i{
             font-size: 50px;
             color: var(--blue);
+            padding-bottom: 14px;
         }
         #info p{
             font-weight: 600;

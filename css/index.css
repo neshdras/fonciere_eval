@@ -87,7 +87,8 @@ header ul a{
             background-repeat: no-repeat;
             background-size: cover;
             background-position-y: 50%;
-            padding: 212px;
+            height: 700px;
+            position: relative;
         }
         .s1 div{
             max-width: 600px;
@@ -98,6 +99,9 @@ header ul a{
             background-color: rgba(39, 105, 124, 0.89);
             text-align: center;
             padding: 20px;
+            position: absolute;
+            left: 32%;
+            top: 30%;
         }
         .s1 h1{
             color: #fff;
@@ -168,8 +172,8 @@ header ul a{
             margin: auto;
             display: flex;
             justify-content: space-evenly;
-            flex-wrap: wrap;
             margin-bottom: 60px;
+            gap: 20px;
         }
         #info article{
             display: grid;
@@ -179,6 +183,9 @@ header ul a{
         #info i{
             font-size: 50px;
             color: var(--blue);
+        }
+        #info p{
+            font-weight: 600;
         }
 
     /* Section 3 */
@@ -288,11 +295,13 @@ header ul a{
             max-width: 700px;
             display: flex;
             gap: 40px;
+            flex-wrap: wrap;
         }
         .s5 input, .s5 textarea{
             width: -webkit-fill-available;
             resize: none;
             padding: 10px;
+            outline: none;
         }
         #check{
             display: block;
@@ -305,6 +314,13 @@ header ul a{
             width: fit-content;
             color: var(--blue);
             padding: 10px 28px;
+            &:hover{
+                transform: scale(1.1);
+                background-color: var(--blue);
+                color: #fff;
+                transition: all 0.3s ease-in-out;
+                outline: none;
+            }
         }
 
 
@@ -325,4 +341,68 @@ footer a{
     letter-spacing: 0;
     line-height: 18.4px;
     font-weight: 400;
+}
+
+@media screen and (max-width : 1024px) {
+    header nav{
+        display: none;
+    }
+    #menu{
+        display: block;
+    }
+    .s1 div{
+        left: 8%;
+    }
+    #presentation{
+        grid-template-columns: none;
+    }
+    .s3 div{
+        grid-template-columns: none;
+    }
+    #gallery{
+        gap: 20px 0;
+    }
+    #gallery img:last-child{
+        width: 720px;
+    }
+    .s4 div{
+        gap: 50px;
+    }
+    .s4 img{
+        width: 90%;
+    }
+}
+@media screen and (max-width : 767px) {
+    .s1 div{
+        padding: 10px;
+        left: 0;
+    }
+    .s1 h1{
+        font-size: 40px;
+    }
+    #presentation h3{
+        font-size: 25px;
+        width: min-content;
+    }
+    #presentation div{
+        gap: 10px;
+    }
+    #presentation p{
+        width: 250px;
+    }
+    #presentation a{
+        position: static;
+    }
+    #presentation img{
+        width: 100%;
+    }
+    #gallery{
+        display: none;
+    }
+    .s3 a{
+        font-size: 14px;
+    }
+    .s5 article{
+        gap: 16px;
+    }
 }
